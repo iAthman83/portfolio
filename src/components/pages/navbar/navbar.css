@@ -1,0 +1,27 @@
+.brand {
+  padding-right: 50px;
+}
+
+.nav {
+  text-decoration: none;
+}
+
+.nav-brand {
+  color: black;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.nav-brand:hover {
+  color: darkcyan;
+}
+
+.nav-links {
+  color: black;
+  font-weight: 700;
+  font-size: large;
+}
+
+.nav-links:hover {
+  color: darkcyan;
+}
