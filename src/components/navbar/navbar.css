@@ -22,7 +22,7 @@
   height: 40px;
 }
 
-.pwa__navbar-links-container {
+.pwa__navbar-links-wrapper {
   display: flex;
   flex-direction: row;
   margin: auto 0;
@@ -34,9 +34,9 @@
   align-items: center;
 }
 
-.pwa__navbar-links-container p a,
+.pwa__navbar-links-wrapper p a,
 .pwa__navbar-button p,
-.pwa__navbar-menu-container p a {
+.pwa__navbar-menu-wrapper p a {
   color: var(--accent-text-color);
   font-weight: 500;
   font-size: 18px;
@@ -47,12 +47,12 @@
   text-decoration: none;
 }
 
-.pwa__navbar-menu-container p a {
+.pwa__navbar-menu-wrapper p a {
   color: #fff;
 }
 
 .pwa__navbar-button button,
-.pwa__navbar-menu-container button {
+.pwa__navbar-menu-wrapper button {
   padding: 0.5rem 2rem;
   color: #fff;
   background: var(--accent-color);
@@ -75,7 +75,7 @@
   cursor: pointer;
 }
 
-.pwa__navbar-menu-container {
+.pwa__navbar-menu-wrapper {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -92,17 +92,17 @@
   box-shadow: 0 0 0 5 rgba(0, 0, 0, 0.2);
 }
 
-.pwa__navbar-menu-container p a {
+.pwa__navbar-menu-wrapper p a {
   margin: 1rem 0;
   text-decoration: none;
 }
 
-.pwa__navbar-menu-container-links-button {
+.pwa__navbar-menu-wrapper-links-button {
   display: none;
 }
 
 @media screen and (max-width: 1050px) {
-  .pwa__navbar-links-container {
+  .pwa__navbar-links-wrapper {
     display: none;
   }
 
@@ -126,11 +126,11 @@
     display: none;
   }
 
-  .pwa__navbar-menu-container {
+  .pwa__navbar-menu-wrapper {
     top: 20px;
   }
 
-  .pwa__navbar-menu-container-links-button {
+  .pwa__navbar-menu-wrapper-links-button {
     display: block;
   }
 }

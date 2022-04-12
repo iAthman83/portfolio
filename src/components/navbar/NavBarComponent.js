@@ -3,7 +3,7 @@ import "./navbar.css";
 import { Link } from "react-router-dom";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 
-import logo from "../../../assets/logo.png";
+import logo from "../../assets/logo.png";
 
 const Menu = () => (
   <>
@@ -35,7 +35,7 @@ const NavBarComponent = () => {
             <img src={logo} alt="logo" />
           </Link>
         </div>
-        <div className="pwa__navbar-links-container">
+        <div className="pwa__navbar-links-wrapper">
           <Menu />
         </div>
       </div>
@@ -57,10 +57,10 @@ const NavBarComponent = () => {
           />
         )}
         {toggleMenu && (
-          <div className="pwa__navbar-menu-container scale-up-center">
-            <div className="pwa__navbar-menu-container-links">
+          <div className="pwa__navbar-menu-wrapper scale-up-center">
+            <div className="pwa__navbar-menu-wrapper-links">
               <Menu />
-              <div className="pwa__navbar-menu-container-links-button">
+              <div className="pwa__navbar-menu-wrapper-links-button">
                 <button type="button">Hire me</button>
               </div>
             </div>

@@ -1,14 +1,14 @@
 import React from "react";
-import "./home.css";
+import "./hero.css";
 import profile from "../../assets/profile.png";
 
-const Homepage = () => {
+const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-left">
         <div className="hero-left-wrapper">
           <h2 className="hero-hello">Hi, my name is</h2>
-          <h1 className="hero-name">Abubaker Athman</h1>
+          <h1 className="hero-name">Abubakar Athman</h1>
           <div className="hero-job-title">
             <div className="hero-job-title-wrapper">
               <div className="hero-job-title-item">Web Developer</div>
@@ -32,4 +32,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Hero;
