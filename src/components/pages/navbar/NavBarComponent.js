@@ -1,51 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
+
+import logo from "../../../assets/logo.png";
+
+const Menu = () => (
+  <>
+    <p>
+      <a href="#home">Home</a>
+    </p>
+    <p>
+      <a href="#about">About Me</a>
+    </p>
+    <p>
+      <a href="#services">Services</a>
+    </p>
+    <p>
+      <a href="#portfolio">Portfolio</a>
+    </p>
+    <p>
+      <a href="#contact">Contact Me</a>
+    </p>
+  </>
+);
 
 const NavBarComponent = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <>
-      <Navbar bg="light" expand="lg">
-        <Container>
-          <Navbar.Brand className="brand">
-            <Link to="/" className="nav nav-brand">
-              Program With Abu
-            </Link>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
-              navbarScroll
-            >
-              <Nav.Link>
-                <Link to="/" className="nav nav-links">
-                  Home
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/about" className="nav nav-links">
-                  About
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/contact" className="nav nav-links">
-                  Contact
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/portfolio" className="nav nav-links">
-                  Portfolio
-                </Link>
-              </Nav.Link>
-            </Nav>
-            <Button variant="outline-success">Get Started</Button>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </>
+    <div className="pwa__navbar">
+      <div className="pwa__navbar-links">
+        <div className="pwa__navbar-links-logo">
+          <Link to="#">
+            <img src={logo} alt="logo" />
+          </Link>
+        </div>
+        <div className="pwa__navbar-links-container">
+          <Menu />
+        </div>
+      </div>
+      <div className="pwa__navbar-button">
+        <button type="button">Hire me</button>
+      </div>
+      <div className="pwa__navbar-menu">
+        {toggleMenu ? (
+          <RiCloseLine
+            color="#333333"
+            size={27}
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <RiMenu3Line
+            color="#333333"
+            size={27}
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
+        {toggleMenu && (
+          <div className="pwa__navbar-menu-container scale-up-center">
+            <div className="pwa__navbar-menu-container-links">
+              <Menu />
+              <div className="pwa__navbar-menu-container-links-button">
+                <button type="button">Hire me</button>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 const FooterComponent = () => {
   const thisYear = new Date().getFullYear();
   return (
-    <Navbar fixed="bottom" bg="dark" variant="dark">
+    <Navbar sticky="bottom" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="#home">Copyright &#169; {thisYear}</Navbar.Brand>
         <Nav className="me-auto">

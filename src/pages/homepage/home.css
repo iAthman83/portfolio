@@ -1,0 +1,75 @@
+.hero {
+  display: flex;
+  height: 88vh;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-left-wrapper {
+  padding: 50px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-intro {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.hero-name {
+  font-size: 60px;
+}
+
+.hero-job-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.hero-job-title-wrapper {
+  height: 100px;
+  animation: scroll 10s ease-in-out infinite alternate;
+}
+
+@keyframes scroll {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.hero-job-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: darkcyan;
+  display: flex;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
