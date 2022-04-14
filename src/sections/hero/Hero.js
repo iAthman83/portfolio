@@ -1,13 +1,17 @@
 import React from "react";
 import "./hero.css";
 import profile from "../../assets/profile.png";
+import {
+  SecondaryButtonComponent,
+  PrimaryButtonComponent,
+} from "../../components/index";
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-left">
         <div className="hero-left-wrapper">
-          <h2 className="hero-hello">Hi, my name is</h2>
+          <h2 className="hero-intro">Hi, my name is</h2>
           <h1 className="hero-name">Abubakar Athman</h1>
           <div className="hero-job-title">
             <div className="hero-job-title-wrapper">
@@ -23,6 +27,10 @@ const Hero = () => {
             for clients of all sizes using ReactJS, React Native, NodeJS or
             WordPress.
           </div>
+          {/* <div className="hero-btn-wrapper">
+            <PrimaryButtonComponent title="See more" />
+            <SecondaryButtonComponent title="Vist YouTube" />
+          </div> */}
         </div>
       </div>
       <div className="hero-right">

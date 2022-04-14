@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
+import { PrimaryButtonComponent } from "../index";
 
 import logo from "../../assets/logo.png";
 
@@ -40,7 +41,8 @@ const NavBarComponent = () => {
         </div>
       </div>
       <div className="pwa__navbar-button">
-        <button type="button">Hire me</button>
+        {/* <button type="button">Hire me</button> */}
+        <PrimaryButtonComponent title={"Hire me"} />
       </div>
       <div className="pwa__navbar-menu">
         {toggleMenu ? (
@@ -61,7 +63,8 @@ const NavBarComponent = () => {
             <div className="pwa__navbar-menu-wrapper-links">
               <Menu />
               <div className="pwa__navbar-menu-wrapper-links-button">
-                <button type="button">Hire me</button>
+                {/* <button type="button">Hire me</button> */}
+                <PrimaryButtonComponent title={"Hire me"} />
               </div>
             </div>
           </div>
