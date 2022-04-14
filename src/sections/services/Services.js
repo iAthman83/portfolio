@@ -1,7 +1,13 @@
 import React from "react";
+import { TitleComponent } from "../../components/index";
 
 const Services = () => {
-  return <div>Services</div>;
+  return (
+    <>
+      <TitleComponent secondary="What I Offer" primary="SERVICES" />
+      <div>Services</div>
+    </>
+  );
 };
 
 export default Services;
