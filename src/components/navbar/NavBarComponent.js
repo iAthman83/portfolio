@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 import { PrimaryButtonComponent } from "../index";
 
@@ -32,9 +32,7 @@ const NavBarComponent = () => {
     <div className="pwa__navbar">
       <div className="pwa__navbar-links">
         <div className="pwa__navbar-links-logo">
-          <Link to="#">
-            <img src={logo} alt="logo" />
-          </Link>
+          <img src={logo} alt="logo" />
         </div>
         <div className="pwa__navbar-links-wrapper">
           <Menu />

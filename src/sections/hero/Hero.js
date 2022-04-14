@@ -1,10 +1,10 @@
 import React from "react";
 import "./hero.css";
 import profile from "../../assets/profile.png";
-import {
-  SecondaryButtonComponent,
-  PrimaryButtonComponent,
-} from "../../components/index";
+// import {
+//   SecondaryButtonComponent,
+//   PrimaryButtonComponent,
+// } from "../../components/index";
 
 const Hero = () => {
   return (
