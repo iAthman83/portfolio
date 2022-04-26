@@ -1,24 +1,25 @@
-.title__wrapper{
+.title__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 6rem;
 }
 
-.title__secondary-title{
+.title__secondary-title {
   padding: 0;
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700px;
   color: var(--secondary-color);
+  text-transform: uppercase;
 }
 
-.title__primary-title{
+.title__primary-title {
   padding: 0;
   margin: 0;
   font-size: 30px;
-  font-weight: 500px;
+  font-weight: bold;
   color: var(--primary-color);
 }
 

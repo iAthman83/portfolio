@@ -35,7 +35,7 @@
 }
 
 .pwa__navbar-links-wrapper p a,
-.pwa__navbar-button p,
+/* .pwa__navbar-button p, */
 .pwa__navbar-menu-wrapper p a {
   color: var(--accent-text-color);
   font-weight: 500;
@@ -51,7 +51,7 @@
   color: #fff;
 }
 
-/* .pwa__navbar-button button,
+/* .pwa__navbar-button button, */
 .pwa__navbar-menu-wrapper button {
   padding: 0.5rem 2rem;
   color: #fff;
@@ -63,7 +63,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-} */
+}
 
 .pwa__navbar-menu {
   margin-left: 1rem;
@@ -81,7 +81,7 @@
   align-items: flex-end;
   flex-direction: column;
   text-align: end;
-  background: var(--primary-color);
+  background: var(--accent-color);
   padding: 2rem;
   position: absolute;
   top: 40px;
@@ -90,6 +90,7 @@
   min-width: 210px;
   border-radius: 5px;
   box-shadow: 0 0 0 5 rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .pwa__navbar-menu-wrapper p a {
