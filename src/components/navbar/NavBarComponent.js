@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./navbar.css";
-// import { Link } from "react-router-dom";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 import { PrimaryButtonComponent } from "../index";
 
@@ -26,7 +25,7 @@ const Menu = () => (
   </>
 );
 
-const NavBarComponent = () => {
+const NavBarComponent = (props) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="pwa__navbar">
@@ -35,7 +34,22 @@ const NavBarComponent = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="pwa__navbar-links-wrapper">
-          <Menu />
+          {/* <Menu /> */}
+          <p>
+            <a href="#home">Home</a>
+          </p>
+          <p>
+            <a>Services</a>
+          </p>
+          <p>
+            <a href="#about">About Me</a>
+          </p>
+          <p>
+            <a href="#contact">Contact Me</a>
+          </p>
+          <p>
+            <a href="#portfolio">Portfolio</a>
+          </p>
         </div>
       </div>
       <div className="pwa__navbar-button">

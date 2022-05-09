@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import { TitleComponent, CardComponent } from "../../components/index";
 
 import { ImLaptop, ImCodepen, ImMakeGroup, ImMobile } from "react-icons/im";
 import "./services.css";
 
-const Services = () => {
+const Services = React.forwardRef((props, ref) => {
+  // const Services = React.forwardRef((props, services) => (
+  // const services = useRef(null);
   return (
-    <div className="services">
+    <div ref={ref} className="services">
       <TitleComponent secondary="Features" primary="What I Offer" />
       <div className="services__wrapper">
         <CardComponent
@@ -41,6 +43,6 @@ const Services = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Services;
