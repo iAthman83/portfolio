@@ -15,6 +15,7 @@
 
 .about-right {
   flex: 1;
+  padding-right: 5rem;
 }
 
 .bg {

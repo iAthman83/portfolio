@@ -1,6 +1,13 @@
 import { useRef } from "react";
 import "./App.css";
-import { Hero, About, Contact, Portfolio, Services } from "./sections/index";
+import {
+  Hero,
+  About,
+  Contact,
+  Portfolio,
+  Services,
+  ProductList,
+} from "./sections/index";
 import { NavBarComponent, FooterComponent } from "./components/index";
 
 function App() {
@@ -10,6 +17,7 @@ function App() {
       <Hero />
       <Services />
       <About />
+      <ProductList />
       <Contact />
       <Portfolio />
       <FooterComponent />
