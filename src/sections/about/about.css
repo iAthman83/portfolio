@@ -1,5 +1,67 @@
 .about {
   height: 100vh;
-  background-color: burlywood;
-  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.bg {
+  position: absolute;
+  top: 50px;
+  left: 95px;
+  background-color: #333333;
+}
+
+.about-card {
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-title {
+  font-weight: 400;
+}
+
+.about-subtitle {
+  margin: 20px 0px;
+}
+
+.about-description {
+  font-weight: 300;
+}
+
+.about-social-icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.about-social-icon {
+  cursor: pointer;
+}
+
+.about-social-icon:hover {
+  transition: all .3s ease-in;
+  transform: scale(1.2);
+  z-index: 1;
 }
