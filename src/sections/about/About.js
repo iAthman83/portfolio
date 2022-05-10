@@ -15,12 +15,7 @@ const About = () => {
       <div className="about-left">
         <div className="about-card bg"></div>
         <div className="about-card">
-          <img
-            className="about-img"
-            src={aboutImg}
-            alt="About Image"
-            srcset=""
-          />
+          <img className="about-img" src={aboutImg} alt="About Image" />
         </div>
       </div>
       <div className="about-right">

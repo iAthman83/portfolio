@@ -19,7 +19,7 @@ function App() {
       <About />
       <ProductList />
       <Contact />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <FooterComponent />
     </>
   );
