@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./about.css";
 import aboutImg from "../../assets/about.JPG";
 import {
@@ -8,12 +8,19 @@ import {
   FaInstagramSquare,
   FaGithub,
 } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { ThemeContext } from "../../context";
 
 const About = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="about">
       <div className="about-left">
-        <div className="about-card bg"></div>
+        <div
+          style={{ backgroundColor: darkMode && "#3aafa9" }}
+          className="about-card bg"
+        ></div>
         <div className="about-card">
           <img className="about-img" src={aboutImg} alt="About Image" />
         </div>
@@ -39,7 +46,7 @@ const About = () => {
             <FaLinkedin
               className="about-social-icon"
               size={25}
-              style={{ color: "#333333" }}
+              style={{ color: darkMode ? "#3aafa9" : "#333333" }}
             />
           </a>
           <a
@@ -50,7 +57,7 @@ const About = () => {
             <FaYoutube
               className="about-social-icon"
               size={25}
-              style={{ color: "#333333" }}
+              style={{ color: darkMode ? "#3aafa9" : "#333333" }}
             />
           </a>
           <a
@@ -61,7 +68,7 @@ const About = () => {
             <FaGithub
               className="about-social-icon"
               size={25}
-              style={{ color: "#333333" }}
+              style={{ color: darkMode ? "#3aafa9" : "#333333" }}
             />
           </a>
           <a
@@ -72,7 +79,7 @@ const About = () => {
             <FaInstagramSquare
               className="about-social-icon"
               size={25}
-              color={{ color: "#333333" }}
+              style={{ color: darkMode ? "#3aafa9" : "#333333" }}
             />
           </a>
           <a
@@ -83,7 +90,7 @@ const About = () => {
             <FaTwitterSquare
               className="about-social-icon"
               size={25}
-              style={{ color: "#333333" }}
+              style={{ color: darkMode ? "#3aafa9" : "#333333" }}
             />
           </a>
         </div>

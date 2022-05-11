@@ -20,8 +20,8 @@
 
 .bg {
   position: absolute;
-  top: 50px;
-  left: 95px;
+  top: 80px;
+  left: 110px;
   background-color: #333333;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .about-title {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .about-subtitle {

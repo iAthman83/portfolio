@@ -3,7 +3,7 @@
   display: flex;
   height: 100vh;
   padding: 0 2.5rem;
-  background: rgb(58,175,169);
+  /* background: rgb(58,175,169); */
   background: linear-gradient(90deg, rgba(58,175,169,1) 0%, rgba(58,175,169,1) 5%, rgba(255,255,255,1) 100%);
 }
 
@@ -132,4 +132,23 @@
   transition: all .3s ease-in;
   transform: scale(1.05);
   z-index: 1;
+}
+
+@media screen and (max-width: 1050px) {
+  
+}
+
+@media screen and (max-width: 700px) {
+  
+}
+
+@media screen and (max-width: 550px) {
+  .hero {
+    flex-direction: column;
+    position: static;
+    background: linear-gradient(180deg, rgba(58,175,169,1) 0%, rgba(58,175,169,1) 5%, rgba(255,255,255,1) 100%);
+  }
+  .custom-shape-divider-bottom-1650973913 {
+    display: none;
+  }
 }

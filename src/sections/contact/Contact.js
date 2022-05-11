@@ -1,14 +1,18 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 import { RiWhatsappFill } from "react-icons/ri";
+import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const formRef = useRef();
   const [sent, setSent] = useState(false);
+
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,7 +36,10 @@ const Contact = () => {
   };
   return (
     <div className="contact">
-      <div className="contact-bg"></div>
+      <div
+        style={{ backgroundColor: darkMode && "#3aafa9" }}
+        className="contact-bg"
+      ></div>
       <div className="contact-wrapper">
         <div className="contact-left">
           <h1 className="contact-title">Let's discuss your project</h1>
@@ -62,6 +69,7 @@ const Contact = () => {
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
+              style={{ backgroundColor: darkMode && "#333333" }}
               className="input"
               type="text"
               placeholder="Name"
@@ -69,6 +77,7 @@ const Contact = () => {
               required={true}
             />
             <input
+              style={{ backgroundColor: darkMode && "#333333" }}
               className="input"
               type="text"
               placeholder="Subject"
@@ -76,6 +85,7 @@ const Contact = () => {
               required={true}
             />
             <input
+              style={{ backgroundColor: darkMode && "#333333" }}
               className="input"
               type="text"
               placeholder="Email"
@@ -83,13 +93,19 @@ const Contact = () => {
               required={true}
             />
             <textarea
+              style={{ backgroundColor: darkMode && "#333333" }}
               className="textarea"
               rows="5"
               placeholder="Message"
               name="message"
               required={true}
             />
-            <button>Submit</button>
+            <button
+              className="button"
+              style={{ backgroundColor: darkMode && "#3aafa9" }}
+            >
+              Submit
+            </button>
             {sent && "Thank you!"}
           </form>
         </div>
