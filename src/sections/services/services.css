@@ -1,0 +1,22 @@
+.services {
+  margin: 150px auto;
+}
+
+.services__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0 5rem;
+  margin: 50px auto;
+}
+
+@media screen and (max-width: 1050px) {
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 550px) {
+}

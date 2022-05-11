@@ -1,0 +1,137 @@
+.pwa__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  /* background-color: var(--accent-color); */
+}
+
+.pwa__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pwa__navbar-links-logo {
+  margin-right: 2rem;
+}
+
+.pwa__navbar-links-logo img {
+  width: 100px;
+  height: 40px;
+}
+
+.pwa__navbar-links-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: auto 0;
+}
+
+.pwa__navbar-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pwa__navbar-links-wrapper p a,
+/* .pwa__navbar-button p, */
+.pwa__navbar-menu-wrapper p a {
+  color: var(--accent-text-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pwa__navbar-menu-wrapper p a {
+  color: #fff;
+}
+
+/* .pwa__navbar-button button, */
+.pwa__navbar-menu-wrapper button {
+  padding: 0.5rem 2rem;
+  color: #fff;
+  background: var(--accent-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.pwa__navbar-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.pwa__navbar-menu svg {
+  cursor: pointer;
+}
+
+.pwa__navbar-menu-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--accent-color);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5 rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.pwa__navbar-menu-wrapper p a {
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.pwa__navbar-menu-wrapper-links-button {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .pwa__navbar-links-wrapper {
+    display: none;
+  }
+
+  .pwa__navbar-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .pwa__navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pwa__navbar {
+    padding: 2rem 4rem;
+  }
+
+  .pwa__navbar-button {
+    display: none;
+  }
+
+  .pwa__navbar-menu-wrapper {
+    top: 20px;
+  }
+
+  .pwa__navbar-menu-wrapper-links-button {
+    display: block;
+  }
+}
