@@ -67,7 +67,7 @@ const Contact = () => {
             <b>What's your story?</b> I'm baby seitan food truck tumblr prism
             ugh man braid artisan health goth taxidermy green juice mlkshk
           </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
+          <form className="form" ref={formRef} onSubmit={handleSubmit}>
             <input
               style={{ backgroundColor: darkMode && "#333333" }}
               className="input"

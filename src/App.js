@@ -33,7 +33,7 @@ function App() {
       <ProductList />
       <Contact />
       {/* <Portfolio /> */}
-      <FooterComponent />
+      {/* <FooterComponent /> */}
     </div>
   );
 }

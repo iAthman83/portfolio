@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./hero.css";
 import profile from "../../assets/profile.png";
 import {
@@ -8,15 +8,21 @@ import {
   FaInstagramSquare,
   FaGithub,
 } from "react-icons/fa";
+import { ThemeContext } from "../../context";
 // import {
 //   SecondaryButtonComponent,
 //   PrimaryButtonComponent,
 // } from "../../components/index";
 
 const Hero = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="hero">
-      <div className="custom-shape-divider-bottom-1650973913">
+    <div className="hero" style={{ background: darkMode && "#222222" }}>
+      <div
+        className="custom-shape-divider-bottom-1650973913"
+        style={{ display: darkMode && "none" }}
+      >
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +46,7 @@ const Hero = () => {
               <FaLinkedin
                 className="hero-social-icon"
                 size={25}
-                style={{ color: "#333333" }}
+                style={{ color: darkMode ? "#3aafa9" : "#333333" }}
               />
             </a>
             <a
@@ -51,7 +57,7 @@ const Hero = () => {
               <FaYoutube
                 className="hero-social-icon"
                 size={25}
-                style={{ color: "#333333" }}
+                style={{ color: darkMode ? "#3aafa9" : "#333333" }}
               />
             </a>
             <a
@@ -62,7 +68,7 @@ const Hero = () => {
               <FaGithub
                 className="hero-social-icon"
                 size={25}
-                style={{ color: "#333333" }}
+                style={{ color: darkMode ? "#3aafa9" : "#333333" }}
               />
             </a>
             <a
@@ -71,9 +77,9 @@ const Hero = () => {
               rel="noopener noreferrer"
             >
               <FaInstagramSquare
-                className="hero-social-icon"
+                className="about-social-icon"
                 size={25}
-                color={{ color: "#333333" }}
+                style={{ color: darkMode ? "#3aafa9" : "#333333" }}
               />
             </a>
             <a
@@ -84,7 +90,7 @@ const Hero = () => {
               <FaTwitterSquare
                 className="hero-social-icon"
                 size={25}
-                style={{ color: "#333333" }}
+                style={{ color: darkMode ? "#3aafa9" : "#333333" }}
               />
             </a>
           </div>

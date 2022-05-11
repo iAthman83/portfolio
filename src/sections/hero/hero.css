@@ -9,7 +9,7 @@
 
 .custom-shape-divider-bottom-1650973913 {
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -146,9 +146,23 @@
   .hero {
     flex-direction: column;
     position: static;
+    height: 200vh;
     background: linear-gradient(180deg, rgba(58,175,169,1) 0%, rgba(58,175,169,1) 5%, rgba(255,255,255,1) 100%);
   }
+
+  .hero-left-wrapper {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
+
   .custom-shape-divider-bottom-1650973913 {
     display: none;
+  }
+
+  .hero-social-icons-wrapper {
+    margin-bottom: 20px;
   }
 }

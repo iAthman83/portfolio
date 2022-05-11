@@ -8,7 +8,6 @@ import {
   FaInstagramSquare,
   FaGithub,
 } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
 import { ThemeContext } from "../../context";
 
 const About = () => {
