@@ -7,6 +7,7 @@ import {
   SoftwareProficiency,
   Services,
   ProductList,
+  YouTube,
 } from "./sections/index";
 import {
   NavBarComponent,
@@ -29,8 +30,9 @@ function App() {
       <NavBarComponent />
       <Hero />
       <Services />
-      <SoftwareProficiency />
       <About />
+      <SoftwareProficiency />
+      {/* <YouTube /> */}
       <ProductList />
       <Contact />
       {/* <FooterComponent /> */}
