@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    img: "https://images.pexels.com/photos/5713818/pexels-photo-5713818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: "https://images.pexels.com/photos/131778/pexels-photo-131778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     link: "http://programwithabu.com",
   },
   {

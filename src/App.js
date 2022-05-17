@@ -4,7 +4,7 @@ import {
   Hero,
   About,
   Contact,
-  Portfolio,
+  SoftwareProficiency,
   Services,
   ProductList,
 } from "./sections/index";
@@ -21,7 +21,7 @@ function App() {
   return (
     <div
       style={{
-        backgroundColor: darkMode ? "#222222" : "white",
+        backgroundColor: darkMode ? "#222222" : "#f5f5f5",
         color: darkMode ? "#BDC1C6" : "#222222",
       }}
     >
@@ -29,10 +29,10 @@ function App() {
       <NavBarComponent />
       <Hero />
       <Services />
+      <SoftwareProficiency />
       <About />
       <ProductList />
       <Contact />
-      {/* <Portfolio /> */}
       {/* <FooterComponent /> */}
     </div>
   );

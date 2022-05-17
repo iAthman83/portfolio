@@ -2,6 +2,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  margin: 0px auto;
 }
 
 .about-left {
@@ -20,7 +21,7 @@
 
 .bg {
   position: absolute;
-  top: 80px;
+  top: 110px;
   left: 110px;
   background-color: #333333;
 }
@@ -45,10 +46,17 @@
 
 .about-subtitle {
   margin: 20px 0px;
+  font-size: 18px;
 }
 
 .about-description {
   font-weight: 300;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .about-social-icons-wrapper {
@@ -70,6 +78,7 @@
 @media screen and (max-width: 550px) {
   .about {
     margin-top: 250px;
+    margin-bottom: 500px;
     flex-direction: column;
     text-align: center;
   }

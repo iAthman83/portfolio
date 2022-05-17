@@ -64,20 +64,26 @@ const Contact = () => {
         </div>
         <div className="contact-right">
           <p className="contact-description">
-            <b>What's your story?</b> I'm baby seitan food truck tumblr prism
-            ugh man braid artisan health goth taxidermy green juice mlkshk
+            <span style={{ fontWeight: "bold" }}>What's your story?</span> Tell
+            me about your next project, let's make it a reality!
           </p>
           <form className="form" ref={formRef} onSubmit={handleSubmit}>
             <input
-              style={{ backgroundColor: darkMode && "#333333" }}
+              style={{
+                backgroundColor: darkMode && "#333333",
+                color: darkMode && "#BDC1C6",
+              }}
               className="input"
               type="text"
-              placeholder="Name"
+              placeholder="Abu Athman"
               name="user_name"
               required={true}
             />
             <input
-              style={{ backgroundColor: darkMode && "#333333" }}
+              style={{
+                backgroundColor: darkMode && "#333333",
+                color: darkMode && "#BDC1C6",
+              }}
               className="input"
               type="text"
               placeholder="Subject"
@@ -85,18 +91,24 @@ const Contact = () => {
               required={true}
             />
             <input
-              style={{ backgroundColor: darkMode && "#333333" }}
+              style={{
+                backgroundColor: darkMode && "#333333",
+                color: darkMode && "#BDC1C6",
+              }}
               className="input"
               type="text"
-              placeholder="Email"
+              placeholder="programwithabu@gmail.com"
               name="user_email"
               required={true}
             />
             <textarea
-              style={{ backgroundColor: darkMode && "#333333" }}
+              style={{
+                backgroundColor: darkMode && "#333333",
+                color: darkMode && "#BDC1C6",
+              }}
               className="textarea"
               rows="5"
-              placeholder="Message"
+              placeholder="Hi Abu, I have a React project that I need delivered on time and on budget ..."
               name="message"
               required={true}
             />
