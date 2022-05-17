@@ -27,7 +27,7 @@ function App() {
       }}
     >
       <ToggleComponent />
-      <NavBarComponent />
+      {/* <NavBarComponent /> */}
       <Hero />
       <Services />
       <About />
