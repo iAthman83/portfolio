@@ -26,6 +26,13 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 770px) {
+  .product-list-title {
+    font-size: 35px;
+  font-weight: 600;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .product-list {
     margin: 50px 0px;

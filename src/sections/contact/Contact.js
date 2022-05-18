@@ -46,11 +46,11 @@ const Contact = () => {
           <div className="contact-info">
             <div className="contact-info-item">
               <FaPhoneAlt size={25} className="contact-icon" />
-              +256 783 373 764
+              <p className="contact-icon-text">+256 783 373 764</p>
             </div>
             <div className="contact-info-item">
               <FaEnvelope color="#0072c6" size={25} className="contact-icon" />
-              abuathman83@gmail.com
+              <p className="contact-icon-text">abuathman83@gmail.com</p>
             </div>
             <div className="contact-info-item">
               <RiWhatsappFill
@@ -58,7 +58,7 @@ const Contact = () => {
                 size={25}
                 className="contact-icon"
               />
-              +256 783 373 764
+              <p className="contact-icon-text">+256 783 373 764</p>
             </div>
           </div>
         </div>

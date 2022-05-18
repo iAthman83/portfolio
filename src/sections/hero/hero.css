@@ -106,7 +106,7 @@
   height: 50px;
   font-size: 30px;
   font-weight: bold;
-  color: crimson;
+  color: #dc143c;
   display: flex;
   align-items: center;
 }
@@ -138,8 +138,28 @@
   
 }
 
-@media screen and (max-width: 700px) {
-  
+@media screen and (max-width: 770px) {
+  .hero-left-wrapper {
+    height: 100%;
+  }
+
+  .hero-social-icons-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .hero-name {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .hero-intro, .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-job-title-item {
+    font-size: 18px;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 550px) {
