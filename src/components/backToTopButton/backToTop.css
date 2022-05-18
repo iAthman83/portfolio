@@ -15,18 +15,18 @@
 
 @media screen and (max-width: 550px) {
   .top-button-parent {
-    display: none;
+    /* display: none; */
   }
 }
 
 @media screen and (max-width: 375px) {
   .top-button-parent {
-    display: none;
+    /* display: none; */
   }
 }
 
 @media screen and (max-width: 320px) {
   .top-button-parent {
-    display: none;
+    /* display: none; */
   }
 }
