@@ -5,3 +5,4 @@ export { default as SecondaryButtonComponent } from "./secondarybtn/SecondaryBut
 export { default as TitleComponent } from "./title/TitleComponent";
 export { default as CardComponent } from "./card/CardComponent";
 export { default as ToggleComponent } from "./toggleDarkMode/ToggleComponent";
+export { default as BackToTopButton } from "./backToTopButton/BackToTopButton";

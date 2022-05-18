@@ -7,12 +7,12 @@ import {
   SoftwareProficiency,
   Services,
   ProductList,
-  YouTube,
 } from "./sections/index";
 import {
   NavBarComponent,
   FooterComponent,
   ToggleComponent,
+  BackToTopButton,
 } from "./components/index";
 import { ThemeContext } from "./context";
 
@@ -27,6 +27,7 @@ function App() {
       }}
     >
       <ToggleComponent />
+      <BackToTopButton />
       {/* <NavBarComponent /> */}
       <Hero />
       <Services />
