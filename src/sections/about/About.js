@@ -19,11 +19,14 @@ const About = () => {
       <TitleComponent secondary="Who am i?" primary="My Story" />
       <div className="about">
         <div className="about-left">
-          <div
+          {/* <div
             style={{ backgroundColor: darkMode && "#3aafa9" }}
             className="about-card bg"
-          ></div>
-          <div className="about-card">
+          ></div> */}
+          <div
+            style={{ boxShadow: darkMode && "-8px 8px 2px 2px #3aafa9" }}
+            className="about-card"
+          >
             <img className="about-img" src={aboutImg} alt="About Image" />
           </div>
         </div>

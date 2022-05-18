@@ -1,10 +1,11 @@
 .contact {
-  height: 100vh;
+  height: 70vh;
   text-align: center;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-top: 50px;
+  /* padding: 2rem 0rem; */
 }
 
 .contact-bg {
@@ -16,6 +17,8 @@
 
 .contact-wrapper {
   display: flex;
+  text-align: center;
+  align-items: center;
   padding: 50px;
   padding: 0rem 6rem;
 }
@@ -74,6 +77,8 @@
 
 .textarea {
   width: 90%;
+  border: none;
+  border-bottom: 1px solid #333333;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;

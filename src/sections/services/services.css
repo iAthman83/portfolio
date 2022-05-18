@@ -19,4 +19,27 @@
 }
 
 @media screen and (max-width: 550px) {
+  .services {
+    height: 100%;
+    width: 100%;
+  }
+
+  .services__wrapper {
+    width: 100%;
+    padding: 0px 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .services__wrapper {
+    width: 100%;
+    padding: 0px 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .services__wrapper {
+    width: 100%;
+    padding: 0px 2rem;
+  }
 }
