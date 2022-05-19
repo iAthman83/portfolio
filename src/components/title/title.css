@@ -20,7 +20,8 @@
   margin: 0;
   font-size: 30px;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--primary-text-color);
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1050px) {
@@ -30,4 +31,11 @@
 }
 
 @media screen and (max-width: 550px) {
+  .title__wrapper {
+    padding-left: 3rem;
+  }
+
+  .title__primary-title {
+    font-size: 16px;
+  }
 }

@@ -4,7 +4,7 @@ import {
   Hero,
   About,
   Contact,
-  Portfolio,
+  SoftwareProficiency,
   Services,
   ProductList,
 } from "./sections/index";
@@ -12,6 +12,7 @@ import {
   NavBarComponent,
   FooterComponent,
   ToggleComponent,
+  BackToTopButton,
 } from "./components/index";
 import { ThemeContext } from "./context";
 
@@ -21,18 +22,20 @@ function App() {
   return (
     <div
       style={{
-        backgroundColor: darkMode ? "#222222" : "white",
+        backgroundColor: darkMode ? "#222222" : "#f5f5f5",
         color: darkMode ? "#BDC1C6" : "#222222",
       }}
     >
       <ToggleComponent />
-      <NavBarComponent />
+      <BackToTopButton />
+      {/* <NavBarComponent /> */}
       <Hero />
       <Services />
       <About />
+      <SoftwareProficiency />
+      {/* <YouTube /> */}
       <ProductList />
       <Contact />
-      {/* <Portfolio /> */}
       {/* <FooterComponent /> */}
     </div>
   );

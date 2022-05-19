@@ -46,11 +46,11 @@ const Contact = () => {
           <div className="contact-info">
             <div className="contact-info-item">
               <FaPhoneAlt size={25} className="contact-icon" />
-              +256 783 373 764
+              <p className="contact-icon-text">+256 783 373 764</p>
             </div>
             <div className="contact-info-item">
               <FaEnvelope color="#0072c6" size={25} className="contact-icon" />
-              abuathman83@gmail.com
+              <p className="contact-icon-text">abuathman83@gmail.com</p>
             </div>
             <div className="contact-info-item">
               <RiWhatsappFill
@@ -58,26 +58,32 @@ const Contact = () => {
                 size={25}
                 className="contact-icon"
               />
-              +256 783 373 764
+              <p className="contact-icon-text">+256 783 373 764</p>
             </div>
           </div>
         </div>
         <div className="contact-right">
           <p className="contact-description">
-            <b>What's your story?</b> I'm baby seitan food truck tumblr prism
-            ugh man braid artisan health goth taxidermy green juice mlkshk
+            <span style={{ fontWeight: "bold" }}>What's your story?</span> Tell
+            me about your next project, let's make it a reality!
           </p>
           <form className="form" ref={formRef} onSubmit={handleSubmit}>
             <input
-              style={{ backgroundColor: darkMode && "#333333" }}
+              style={{
+                backgroundColor: darkMode && "#333333",
+                color: darkMode && "#BDC1C6",
+              }}
               className="input"
               type="text"
-              placeholder="Name"
+              placeholder="Abu Athman"
               name="user_name"
               required={true}
             />
             <input
-              style={{ backgroundColor: darkMode && "#333333" }}
+              style={{
+                backgroundColor: darkMode && "#333333",
+                color: darkMode && "#BDC1C6",
+              }}
               className="input"
               type="text"
               placeholder="Subject"
@@ -85,18 +91,24 @@ const Contact = () => {
               required={true}
             />
             <input
-              style={{ backgroundColor: darkMode && "#333333" }}
+              style={{
+                backgroundColor: darkMode && "#333333",
+                color: darkMode && "#BDC1C6",
+              }}
               className="input"
               type="text"
-              placeholder="Email"
+              placeholder="programwithabu@gmail.com"
               name="user_email"
               required={true}
             />
             <textarea
-              style={{ backgroundColor: darkMode && "#333333" }}
+              style={{
+                backgroundColor: darkMode && "#333333",
+                color: darkMode && "#BDC1C6",
+              }}
               className="textarea"
               rows="5"
-              placeholder="Message"
+              placeholder="Hi Abu, I have a React project that I need delivered on time and on budget ..."
               name="message"
               required={true}
             />

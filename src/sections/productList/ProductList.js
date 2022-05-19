@@ -11,8 +11,7 @@ const ProductList = () => {
       <div className="product-list-texts">
         <h1 className="product-list-title">Inspiring Creations</h1>
         <p className="product-list-description">
-          I'm baby seitan food truck tumblr prism ugh man braid artisan health
-          goth taxidermy green juice mlkshk pitchfork lo-fi.
+          Have a look at my previous creations using React and WordPress
         </p>
       </div>
       <div className="product-list-list">

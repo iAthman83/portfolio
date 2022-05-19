@@ -26,11 +26,19 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 770px) {
+  .product-list-title {
+    font-size: 35px;
+  font-weight: 600;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .product-list {
-    margin: 200px 0px;
-    padding: 0px 3rem;
+    margin: 50px 0px;
+    padding: 0px 1rem;
     text-align: center;
+    width: 100%;
   }
 
   .product-list-texts {
@@ -38,7 +46,7 @@
   }
 
   .product-list-title {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
   }
 
@@ -47,5 +55,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .product-list-title {
+    font-size: 25px;
+    font-weight: 600;
   }
 }

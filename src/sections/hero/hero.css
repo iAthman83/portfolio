@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   height: 100vh;
-  padding: 0 2.5rem;
+  padding: 3rem 2.5rem;
   /* background: rgb(58,175,169); */
   background: linear-gradient(90deg, rgba(58,175,169,1) 0%, rgba(58,175,169,1) 5%, rgba(255,255,255,1) 100%);
 }
@@ -106,7 +106,7 @@
   height: 50px;
   font-size: 30px;
   font-weight: bold;
-  color: crimson;
+  color: #dc143c;
   display: flex;
   align-items: center;
 }
@@ -138,15 +138,34 @@
   
 }
 
-@media screen and (max-width: 700px) {
-  
+@media screen and (max-width: 770px) {
+  .hero-left-wrapper {
+    height: 100%;
+  }
+
+  .hero-social-icons-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .hero-name {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .hero-intro, .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-job-title-item {
+    font-size: 18px;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .hero {
     flex-direction: column;
     position: static;
-    height: 200vh;
     background: linear-gradient(180deg, rgba(58,175,169,1) 0%, rgba(58,175,169,1) 5%, rgba(255,255,255,1) 100%);
   }
 
@@ -166,3 +185,25 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .hero-job-title-wrapper {
+    height: 100%;
+  }
+
+  .hero-job-title-item {
+    height: 100%;
+    font-size: 24px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-job-title-item {
+    height: 100%;
+    font-size: 20px;
+    display: block;
+  }
+}
+
+
